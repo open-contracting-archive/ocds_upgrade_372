@@ -1,0 +1,66 @@
+{
+  "definitions": {
+    "Transaction": {
+      "properties": {
+        "value": {
+          "$ref": "#/definitions/Value"
+        },
+        "payer": {
+          "$ref": "#/definitions/Identifier"
+        },
+        "payee": {
+          "$ref": "#/definitions/Identifier"
+        },
+        "amount": {
+          "deprecated": {
+            "deprecatedVersion": "1.1",
+            "description": "This field has been replaced by the ```transaction.value``` field for consistency with the use of value and amount elsewhere in the standard."
+          }
+        },
+        "providerOrganization": {
+          "deprecated": {
+            "deprecatedVersion": "1.1",
+            "description": "This field has been replaced by the ```transaction.payer``` field to resolve ambiguity arising from 'provider' being interpreted as relating to the goods or services procured rather than the flow of funds between the parties."
+          }
+        },
+        "receiverOrganization": {
+          "deprecated": {
+            "deprecatedVersion": "1.1",
+            "description": "This field has been replaced by the ```transaction.payee``` field to resolve ambiguity arising from 'receiver' being interpreted as relating to the goods or services procured rather than the flow of funds between the parties."
+          }
+        }
+      }
+    },
+    "TransactionUnversioned": {
+      "properties": {
+        "value": {
+          "$ref": "#/definitions/ValueUnversioned"
+        },
+        "payer": {
+          "$ref": "#/definitions/IdentifierUnversioned"
+        },
+        "payee": {
+          "$ref": "#/definitions/IdentifierUnversioned"
+        },
+        "amount": {
+          "deprecated": {
+            "deprecatedVersion": "1.1",
+            "description": "This field has been replaced by the ```transaction.value``` field for consistency with the use of value and amount elsewhere in the standard."
+          }
+        },
+        "providerOrganization": {
+          "deprecated": {
+            "deprecatedVersion": "1.1",
+            "description": "This field has been replaced by the ```transaction.payer``` field to resolve ambiguity arising from 'provider' being interpreted as relating to the goods or services procured rather than the flow of funds between the parties."
+          }
+        },
+        "receiverOrganization": {
+          "deprecated": {
+            "deprecatedVersion": "1.1",
+            "description": "This field has been replaced by the ```transaction.payee``` field to resolve ambiguity arising from 'receiver' being interpreted as relating to the goods or services procured rather than the flow of funds between the parties."
+          }
+        }
+      }
+    }
+  }
+}
