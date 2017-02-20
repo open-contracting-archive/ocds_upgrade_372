@@ -11,12 +11,12 @@
         "payer": {
           "title": "Payer",
           "description": "The Organization Identifier for the organization from which the funds in this transaction originate. Expressed following the Organizational Identifier standard - consult the documentation and the codelist.",
-          "$ref": "#/definitions/Identifier"
+          "$ref": "#/definitions/OrganizationReference"
         },
         "payee": {
           "title": "Payee",
           "description": "The Organization Identifier for the organization which receives the funds in this transaction. Expressed following the Organizational Identifier standard - consult the documentation and the codelist.",
-          "$ref": "#/definitions/Identifier"
+          "$ref": "#/definitions/OrganizationReference"
         },
         "id": {
           "description": "A unique identifier for this transaction. This identifier should be possible to cross-reference against the provided data source. For IATI this is the transaction reference."
